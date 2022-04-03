@@ -1,0 +1,25 @@
+Python
+
+C++
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        int a = 0;
+        int b = numbers.size() - 1;
+        while (a < b) {   //for(a = 0; a < b; a ++)
+        int sum_ab = numbers[a] + numbers[b];
+        if (sum_ab == target){
+            return {a+1,b+1};;q
+        }
+        else if (sum_ab < target){
+            a ++;
+        }
+        else {
+            b --;
+        }
+            
+            }
+        return {};
+    }
+};
